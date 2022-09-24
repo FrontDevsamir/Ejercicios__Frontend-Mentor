@@ -37,6 +37,7 @@ body {
 
 .container {
     width: var(--width);
+    height: 100%;
     display: flex;
     margin: auto;
 }
@@ -53,6 +54,10 @@ body {
 
 .column .row:nth-child(1) .coment:nth-child(1) {
     background-color: var(--moderate-violet);
+    background-image: url('../images/bg-pattern-quotation.svg');
+    background-repeat: no-repeat;
+    background-position: top 15% right 15%;
+    position: relative;
 }
 
 .column .row:nth-child(1) .coment:nth-child(2) {
@@ -119,7 +124,7 @@ body {
 
     .row {
         display: flex;
-        gap: 30px;
+        gap: 40px;
     }
 }
 
@@ -130,7 +135,7 @@ body {
         margin: 20px 0;
         padding: 2em 3.5em;
         display: flex;
-        gap: 30px;
+        gap: 40px;
         border-radius: .5em;
         box-shadow: 1px 1px 15px 0 hsl(219, 29%, 44%);
     }
@@ -147,7 +152,7 @@ body {
         flex-grow: 5;
         display: flex;
         flex-direction: column;
-        gap: 30px;
+        justify-content: space-between;  
     }
 
 }
